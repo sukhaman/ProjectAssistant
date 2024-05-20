@@ -1,0 +1,233 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios15.0-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ProjectAssistantFramework
+import AppKit
+import DeveloperToolsSupport
+import Foundation
+import PDFKit
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class LocalizationManager {
+  public static var currentLanguage: Swift.String {
+    get
+    set
+  }
+  public static func setLanguage(_ language: Swift.String)
+  public static func resetLanguage()
+  @objc deinit
+}
+extension Foundation.Bundle {
+  public static func setLanguage(_ language: Swift.String)
+  public static func resetLanguage()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class VFITextFieldWBottomLine : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) convenience public init(lineColor: UIKit.UIColor, placeHolder: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func placeholderRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor(unsafe) public func addDropDownIcon()
+  @objc deinit
+}
+extension Swift.String {
+  public func format(with mask: Swift.String, phone: Swift.String) -> Swift.String
+  public var isNumber: Swift.Bool {
+    get
+  }
+  public func attributedStringWithColor(_ strings: [Swift.String], color: UIKit.UIColor, characterSpacing: Swift.UInt? = nil) -> Foundation.NSAttributedString
+  public func isValidEmail() -> Swift.Bool
+  public func attributedStringWithBoldFont(normalText: Swift.String, boldText: Swift.String) -> Foundation.NSAttributedString
+  public func trim() -> Swift.String
+  public func height(withConstrainedWidth width: CoreFoundation.CGFloat, font: UIKit.UIFont) -> CoreFoundation.CGFloat
+  public func width(withConstraintedHeight height: CoreFoundation.CGFloat, font: UIKit.UIFont) -> CoreFoundation.CGFloat
+  public func encode() -> Swift.String
+  public func base64Encoded() -> Swift.String
+  public func base64Decoded() -> Swift.String
+  public func replace(old string: Swift.String, withString: Swift.String) -> Swift.String
+  public func contains(s: Swift.String) -> Swift.Bool
+  public func maskYear() -> Swift.String
+  public func maskLicense() -> Swift.String
+  public static func random(length: Swift.Int = 5) -> Swift.String
+  public func convertDateToServerFormat() -> Swift.String?
+  public func replaceCurrencySymbol() -> Swift.String
+}
+extension Foundation.URL {
+  public func documentDirectory() -> Foundation.URL
+}
+@nonobjc extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func add(_ child: UIKit.UIViewController, frame: CoreFoundation.CGRect? = nil)
+  @_Concurrency.MainActor(unsafe) public func remove()
+}
+extension QuartzCore.CATransition {
+  public func segueFromBottom() -> QuartzCore.CATransition
+  public func segueFromTop() -> QuartzCore.CATransition
+  public func segueFromLeft() -> QuartzCore.CATransition
+  public func popFromRight() -> QuartzCore.CATransition
+  public func popFromLeft() -> QuartzCore.CATransition
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func addNoTopBorder(color: UIKit.UIColor, thickness: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func addNoBottomBorder(color: UIKit.UIColor, thickness: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func addTopBorder(color: UIKit.UIColor, thickness: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func addBottomBorder(color: UIKit.UIColor, thickness: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func addLeftBorder(color: UIKit.UIColor, thickness: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func addRightBorder(color: UIKit.UIColor, thickness: CoreFoundation.CGFloat)
+}
+extension UIKit.UIAlertAction {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public class func makeActionWithTitle(title: Swift.String?, style: UIKit.UIAlertAction.Style, handler: ((UIKit.UIAlertAction) -> Swift.Void)?) -> UIKit.UIAlertAction
+}
+public class LoadingIndicator {
+  public init(containerView: UIKit.UIView, message: Swift.String = "")
+  public func start()
+  public func stop()
+  @objc deinit
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public func setBackgroundColor(_ color: UIKit.UIColor, for state: UIKit.UIControl.State)
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func roundCorners(corners: UIKit.UIRectCorner, radius: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func topLineBorder(color: UIKit.UIColor, width: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func trailingBorder(color: UIKit.UIColor, width: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func bottomLineBorde(color: UIKit.UIColor, width: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func leadingBorder(color: UIKit.UIColor, width: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) public func shake()
+  @_Concurrency.MainActor(unsafe) public func rotate(_ toValue: CoreFoundation.CGFloat, duration: CoreFoundation.CFTimeInterval = 0.3)
+  @_Concurrency.MainActor(unsafe) public func viewTouch(completion: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public func viewTouchSmall(completion: @escaping () -> Swift.Void)
+}
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func imageTouch(completion: @escaping () -> Swift.Void)
+}
+extension UIKit.UIImage {
+  public func resizeImage(newWidth: CoreFoundation.CGFloat) -> UIKit.UIImage
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public func image(image: UIKit.UIImage, prifix: Swift.Bool = false)
+}
+extension UIKit.UITableView {
+  @_Concurrency.MainActor(unsafe) public func reload()
+  @_Concurrency.MainActor(unsafe) public func reloadRows(_ indexPaths: [Foundation.IndexPath])
+  @_Concurrency.MainActor(unsafe) public func deleteRows(_ indexPaths: [Foundation.IndexPath])
+  @_Concurrency.MainActor(unsafe) public func registerCell(_ cellIdentifier: Swift.String = "cell")
+  @_Concurrency.MainActor(unsafe) public func registerCustomeCell(_ nibNames: [Swift.String], cellIdentifier: Swift.String = "cell")
+  @_Concurrency.MainActor(unsafe) public func registerCustomeCellWithcellIdentifier(_ nibNames: [Swift.String], cellIdentifier: [Swift.String] = ["cell"])
+  @_Concurrency.MainActor(unsafe) public func registerCustomeHeaderCell(_ nibNames: [Swift.String], cellIdentifier: [Swift.String] = ["cell"])
+  @_Concurrency.MainActor(unsafe) public func registerHeaderCell(_ nibName: Swift.String, cellIdentifier: Swift.String = "headerView")
+  @_Concurrency.MainActor(unsafe) public func registerFooterCell(_ nibName: Swift.String, cellIdentifier: Swift.String = "footerView")
+}
+extension UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) public func setInputViewDatePicker(datePicker: UIKit.UIDatePicker, target: Any, selector: ObjectiveC.Selector)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func tapCancel()
+  @_Concurrency.MainActor(unsafe) public func setupCurrencyFormatting()
+}
+extension Swift.String {
+  public func formatNumberString(_ numberString: inout Swift.String)
+  public func tail(s: Swift.String) -> Swift.String
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public func indexOfAttributedTextCharacterAtPoint(point: CoreFoundation.CGPoint) -> Swift.Int
+}
+extension UIKit.UITapGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) public func didTapAttributedTextInLabel(label: UIKit.UILabel, inRange targetRange: Foundation.NSRange) -> Swift.Bool
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class VFIImageButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) convenience public init(backgroundColor: UIKit.UIColor, titleImage: UIKit.UIImage)
+  @_Concurrency.MainActor(unsafe) public func set(backgroundColor: UIKit.UIColor, titleImage: UIKit.UIImage)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class VFIView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func addBorderWithBottomCornerRadius(borderWidth: CoreFoundation.CGFloat = 1, borderColor: CoreGraphics.CGColor = UIColor.lightGray.cgColor, cornorRadius: CoreFoundation.CGFloat = 10)
+  @_Concurrency.MainActor(unsafe) public func addBorderWithTopCornerRadius(borderWidth: CoreFoundation.CGFloat = 1, borderColor: CoreGraphics.CGColor = UIColor.lightGray.cgColor, cornorRadius: CoreFoundation.CGFloat = 10)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class RoundShadowView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) public func layoutView()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class VFITextFieldWIcon : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func leftViewRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @_Concurrency.MainActor(unsafe) convenience public init(placeholder: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func placeholderRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class VFITextFieldRightWIcon : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func rightViewRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var rightImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) convenience public init(placeholder: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func placeholderRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class VFIStackView : UIKit.UIStackView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class VFITextField : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) convenience public init(placeholder: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func placeholderRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class VFITextFieldNoBorder : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) convenience public init(placeholder: Swift.String, fontSize: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func placeholderRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class VFIButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) convenience public init(backgroundColor: UIKit.UIColor, title: Swift.String, titleColor: UIKit.UIColor = .white)
+  @_Concurrency.MainActor(unsafe) public func set(backgroundColor: UIKit.UIColor, title: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class VFITextFieldBordered : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) convenience public init(placeholder: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func addDropDownIcon()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func placeholderRect(forBounds bounds: CoreFoundation.CGRect) -> CoreFoundation.CGRect
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class VFIImageView : UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class VFIProgressBar : UIKit.UIStackView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) convenience public init(currentProgress: Swift.Int, totalProgress: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func updateCurrentAndTotalProgress(currentProgress: Swift.Int, totalProgress: Swift.Int)
+  @objc deinit
+}
+public protocol DeviceSupportProtocol {
+  var userInterfaceIdiom: UIKit.UIUserInterfaceIdiom { get }
+}
+extension UIKit.UIDevice : ProjectAssistantFramework.DeviceSupportProtocol {
+}
+public class DeviceHelper {
+  public init(device: any ProjectAssistantFramework.DeviceSupportProtocol)
+  public func isIPad() -> Swift.Bool
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class VFILabel : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) convenience public init(textAlignment: UIKit.NSTextAlignment, fontSize: CoreFoundation.CGFloat, weight: UIKit.UIFont.Weight)
+  @objc deinit
+}
