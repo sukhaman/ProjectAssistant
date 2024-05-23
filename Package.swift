@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "ProjectAssistant",
+    defaultLocalization: "en", // Set this to your default localization
     platforms: [.iOS(.v15)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
@@ -15,8 +16,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "ProjectAssistant", path: "Sources/ProjectAssistant/ProjectAssistantFramework.xcframework"
-        ),
+        .target(name: "ProjectAssistant"),
         .testTarget(
             name: "ProjectAssistantTests",
             dependencies: ["ProjectAssistant"]),

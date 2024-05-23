@@ -1,0 +1,20 @@
+  xcassets:
+   inputs:
+     - Sources/ProjectAssistant/SupportingFiles/Assets.xcassets
+     - Sources/ProjectAssistant/SupportingFiles/Colors.xcassets
+   outputs:
+     - templateName: swift5
+       params:
+         forceProvidesNamespaces: true
+         enumName: ProjectResources
+       output: Sources/ProjectAssistant/SupportingFiles/XCAssets+Generated.swift
+    
+  strings:
+   inputs:
+     - Sources/ProjectAssistant/SupportingFiles/en.lproj/Constant.strings
+   outputs:
+     - templatePath: Sources/ProjectAssistant/SupportingFiles/Project-structured-swift.stencil
+       params:
+         forceProvidesNamespaces: true
+         enumName: ProjectAssistant
+       output: Sources/ProjectAssistant/SupportingFiles/Strings+Generated.swift
