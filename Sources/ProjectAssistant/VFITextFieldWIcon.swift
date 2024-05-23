@@ -1,11 +1,11 @@
 //
-//  Copyright © 2023 Sukhaman. All rights reserved.
+//
 //
 
 
 import UIKit
 
-public class VFITextFieldWIcon: UITextField {
+public class GSTextFieldWIcon: UITextField {
     
     public override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
             var textRect = super.leftViewRect(forBounds: bounds)
@@ -90,7 +90,7 @@ public class VFITextFieldWIcon: UITextField {
 
 }
 
-public class VFITextFieldRightWIcon: UITextField {
+public class GSTextFieldRightWIcon: UITextField {
     
     public override func rightViewRect(forBounds bounds: CGRect) -> CGRect {
             var textRect = super.rightViewRect(forBounds: bounds)

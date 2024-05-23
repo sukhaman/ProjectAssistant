@@ -1,11 +1,10 @@
 //
-//  Copyright © 2023 Sukhaman. All rights reserved.
 //
-
+//
 
 import UIKit
 
-public class VFITextFieldWBottomLine: UITextField {
+public class GSTextFieldWBottomLine: UITextField {
     
     private let bottomLine = UIView()
     

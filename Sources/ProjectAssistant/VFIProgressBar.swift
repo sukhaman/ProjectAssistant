@@ -1,12 +1,12 @@
 //
-//  Copyright © 2023 Sukhaman. All rights reserved.
+//
 //
 
 
 import UIKit
 
 
-public class VFIProgressBar: UIStackView {
+public class GSProgressBar: UIStackView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,14 +39,14 @@ public class VFIProgressBar: UIStackView {
     
     private func setUpStacKView(currentProgress: Int, totalProgress: Int) {
         for _ in 1...currentProgress {
-            let view = VFIView(frame: .zero)
+            let view = GSView(frame: .zero)
             view.backgroundColor = ProjectResources.Colors.secondaryGreen.color
             
             self.addArrangedSubview(view)
         }
         
         for _ in currentProgress..<totalProgress {
-            let view = VFIView(frame: .zero)
+            let view = GSView(frame: .zero)
             view.backgroundColor = ProjectResources.Colors.appAliceBlue.color
             
             self.addArrangedSubview(view)

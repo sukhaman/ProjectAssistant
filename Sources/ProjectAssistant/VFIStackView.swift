@@ -1,11 +1,11 @@
 //
-//  Copyright © 2023 Sukhaman. All rights reserved.
+//
 //
 
 import UIKit
 
 
-public class VFIStackView: UIStackView {
+public class GSStackView: UIStackView {
     
     
     public override init(frame: CGRect) {
