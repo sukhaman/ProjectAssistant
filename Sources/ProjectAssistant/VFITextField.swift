@@ -1,11 +1,10 @@
 //
-//  Copyright © 2023 Sukhaamn. All rights reserved.
 //
-
+//
 
 import UIKit
 
-public class VFITextField: UITextField {
+public class GSTextField: UITextField {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -50,7 +49,7 @@ public class VFITextField: UITextField {
 }
 
 
-public class VFITextFieldNoBorder: UITextField {
+public class GSTextFieldNoBorder: UITextField {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)

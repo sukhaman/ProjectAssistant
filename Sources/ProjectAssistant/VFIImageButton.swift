@@ -1,11 +1,11 @@
 //
-//  Copyright © 2023 Sukhaman. All rights reserved.
+//
 //
 
-import Foundation
+
 import UIKit
 
-public class VFIImageButton: UIButton {
+public class GSImageButton: UIButton {
 
     public override init(frame: CGRect) {
         super.init(frame: frame)

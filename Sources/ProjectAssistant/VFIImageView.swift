@@ -1,11 +1,10 @@
 //
-//  Copyright © 2023 Sukhaman. All rights reserved.
 //
-
+//
 
 import UIKit
 
-public class VFIImageView: UIImageView {
+public class GSImageView: UIImageView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)

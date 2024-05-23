@@ -1,12 +1,8 @@
 //
-//  UIKit+UIViews.swift
-//  Elektea
 //
-//  Created by iTreeni on 02/12/19.
-//  Copyright © 2019 iTreeni. All rights reserved.
 //
 
-import Foundation
+
 import UIKit
 
 extension UIButton {

@@ -1,11 +1,10 @@
 //
-//  Copyright © 2023 Sukhaman. All rights reserved.
 //
-
+//
 
 import UIKit
 
-open class VFILabel: UILabel {
+open class GSLabel: UILabel {
 
     public override init(frame: CGRect) {
         super.init(frame: frame)

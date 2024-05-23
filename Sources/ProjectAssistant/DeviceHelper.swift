@@ -1,5 +1,5 @@
 //
-//  Copyright © 2023 Erdos Technologies. All rights reserved.
+//
 //
 
 import UIKit

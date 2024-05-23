@@ -1,5 +1,5 @@
 //
-//  Copyright © 2023 Sukhaman. All rights reserved.
+//
 //
 
 import Foundation

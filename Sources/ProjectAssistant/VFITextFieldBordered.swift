@@ -1,12 +1,11 @@
 //
-//  Copyright © 2023 Sukhaman. All rights reserved.
 //
-
+//
 
 import UIKit
 
 
-public class VFITextFieldBordered: UITextField {
+public class GSTextFieldBordered: UITextField {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
